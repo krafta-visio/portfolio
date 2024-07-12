@@ -1,1 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>krafta: Image Gallery</title>
+    <meta name="description" content="protfolio">
+    <meta name="author" content="krafta">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/1.1.0/magnific-popup.min.css">
+	<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+	<div style='text-align: center;'>
+		<img src="logo.png">
+		<h1>Explore Our Gallery</h1>
+		<h3>Discover Captivating Moments and Timeless Beauty</h3>
+	</div>
+
+
+    <div id="gallery"></div>
+	
+	
+	<div id="lightbox" class="lightbox">
+		<span id="close-lightbox" class="lightbox-button" onclick="closeLightbox()">&times;</span>
+		<img id="lightbox-image" class="lightbox-image" src="" alt="Image">
+		<div class="lightbox-text">
+			<img src="logo.png" alt="Logo">
+		</div>
+		<div class="lightbox-buttons">
+			<button id="prev-image" class="lightbox-button" onclick="navigateImage('prev')">&#10094;</button>
+			<button id="next-image" class="lightbox-button" onclick="navigateImage('next')">&#10095;</button>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        const images = [
+
+          
+          "images/136578492.jpg", "images/179958002.jpg", "images/188307955.jpg", "images/204530875.jpg", "images/204778680.jpg", "images/207339312.jpg", "images/208149518.jpg", 
+          "images/208182883.jpg", "images/215888648.jpg", "images/218066704.jpg", "images/230307352.jpg", "images/230849844.jpg", "images/232616330.jpg", "images/236473750.jpg", 
+          "images/238229762.jpg", "images/238667763.jpg", "images/248350766.jpg", "images/252688473.jpg", "images/285154832.jpg", "images/287370133.jpg", "images/295395279.jpg", 
+          "images/298390951.jpg", "images/305302094.jpg", "images/320285415.jpg", "images/326587445.jpg", "images/354497662.jpg", "images/357578983.jpg", "images/363380718.jpg", 
+          "images/371733605.jpg", "images/372318509.jpg", "images/372615881.jpg", "images/382196024.jpg", "images/385459361.jpg", "images/402593465.jpg", "images/413031649.jpg", 
+          "images/433747638.jpg", "images/436489206.jpg", "images/440926836.jpg", "images/444276077.jpg", "images/453934680.jpg", "images/460602945.jpg", "images/463642687.jpg", 
+          "images/466832025.jpg", "images/468833516.jpg", "images/469355245.jpg", "images/484375411.jpg", "images/492870873.jpg", "images/494145959.jpg", "images/499547164.jpg", 
+          "images/501027710.jpg", "images/505695983.jpg", "images/507054359.jpg", "images/516551473.jpg", "images/533727418.jpg", "images/539133523.jpg", "images/548526501.jpg", 
+          "images/577660116.jpg", "images/582602766.jpg", "images/589716446.jpg", "images/591688980.jpg", "images/606699530.jpg", "images/610143194.jpg", "images/621692562.jpg", 
+          "images/629655018.jpg", "images/634186170.jpg", "images/637149136.jpg", "images/660284730.jpg", "images/666120768.jpg", "images/674799251.jpg", "images/677036799.jpg", 
+          "images/738202313.jpg", "images/750885707.jpg", "images/752656235.jpg", "images/757918764.jpg", "images/796298331.jpg", "images/798743905.jpg", "images/806736432.jpg", 
+          "images/811418210.jpg", "images/813113153.jpg", "images/813858257.jpg", "images/818589753.jpg", "images/846826997.jpg", "images/848688038.jpg", "images/852398179.jpg", 
+          "images/855638152.jpg", "images/872396319.jpg", "images/874105446.jpg", "images/881150444.jpg", "images/883631438.jpg", "images/889621271.jpg", "images/910045364.jpg", 
+          "images/912482869.jpg", "images/915224434.jpg", "images/920355343.jpg", "images/920938050.jpg", "images/923726325.jpg", "images/940650046.jpg", "images/941465514.jpg", 
+          "images/942381619.jpg", "images/943731874.jpg", "images/948743440.jpg", "images/958418320.jpg", "images/959292931.jpg", "images/961732670.jpg", "images/965703811.jpg", 
+          "images/967491360.jpg", "images/971657577.jpg", "images/974982238.jpg", "images/977472999.jpg", "images/980193392.jpg", "images/984338753.jpg", "images/986387223.jpg", 
+          "images/993132566.jpg", "images/994066140.jpg"
+        ];
+    </script>
+	
+	<script src="gallery-script.js"></script>
+	
+</body>
+</html>
 
