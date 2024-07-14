@@ -15,7 +15,9 @@ function showOverlay() {
 }
 
 function hideOverlay() {
-	overlay.style.display = 'none';
+	setTimeout(function(){
+		overlay.style.display = 'none';
+	},1500);
 }
 
 function loadImages() {
@@ -44,7 +46,7 @@ function loadImages() {
 		}
 
 		hideOverlay(); // Sembunyikan overlay loading setelah selesai memuat
-	}, 500); // Jeda 0.5 detik sebelum memuat foto berikutnya
+	}, 1000); // Jeda 0.5 detik sebelum memuat foto berikutnya
 }
 
 
