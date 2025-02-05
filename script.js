@@ -1,6 +1,6 @@
 const images = [
 
-'images/RSTU4013.jpg', 'images/RSTU4017.jpg', 'images/RSTU4035.jpg',
+'images/RSTU4013f1d2s_.jpg', 'images/RSTU4017f1d2s_.jpg', 'images/RSTU4035f1d2s_.jpg', 
 
 	
 'images/12136560.jpg', 'images/13150058.jpg', 'images/13609523.jpg', 'images/14233850.jpg', 'images/14488014.jpg', 'images/16399632.jpg', 
